@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6214f7d4c6559b2dce83f9ff
+
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type:application/json
+
+{
+    "name": "James",
+    "subscribedToChannel": "crazycoolchannel"
+}
+
+
+###
+DELETE http://localhost:3000/subscribers/6214f7d4c6559b2dce83f9ff
+
+###
+PATCH http://localhost:3000/subscribers/6214f7d2c6559b2dce83f9fd
+Content-Type:application/json
+
+{
+    "name":"New Name"
+}
